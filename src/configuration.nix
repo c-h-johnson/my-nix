@@ -82,6 +82,7 @@
     typst-lsp
 
     # language
+    gcc
     pkg-config
     (python3.withPackages(ps: with ps; [ python-lsp-ruff pyftpdlib pytest ]))
     rustup
@@ -126,4 +127,14 @@
       ];
     };
   };
+
+  nix = {
+    autoOptimiseStore = true;
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 365d";
+    };
+  };
+
 }
