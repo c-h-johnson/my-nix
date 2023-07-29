@@ -66,6 +66,7 @@
     bottom
     exa
     fd
+    file
     jq
     ripgrep
     unzip
