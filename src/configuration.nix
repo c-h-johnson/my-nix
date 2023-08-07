@@ -85,7 +85,12 @@
     # language
     gcc
     pkg-config
-    (python3.withPackages(ps: with ps; [ python-lsp-ruff pyftpdlib pytest ]))
+    (python3.withPackages(ps: with ps; [
+      python-lsp-ruff
+      pylsp-mypy
+      pyftpdlib
+      pytest
+    ]))
     rustup
     typst
   ];
