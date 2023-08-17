@@ -47,6 +47,7 @@
   # list packages installed in system profile
   environment.systemPackages = with pkgs; [
     # app
+    audacious
     firefox
     gimp
     pavucontrol
